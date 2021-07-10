@@ -1,0 +1,109 @@
+h1{text-align: center; color: yellow;background-color: black;font-family: 'Times New Roman', Times, serif;}
+img{margin-left: auto;margin-right: auto;width: 50%;display: block;}
+h2{text-align: center;font-size: 30px;font-family:Arial, Helvetica, sans-serif;}
+h4{text-align: center;color: gold;font-family:cursive}
+.price{font-size: x-large;}
+footer {
+  background-image: linear-gradient(black, white);
+  padding: 30px 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  padding: 18px 88px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.topnav a:hover {
+  background-color: royalblue;
+  color: black;
+  text-shadow: black 4px 4px 8px;
+}
+
+.topnav a.active {
+  background-color: gold;
+  color: black;
+}
+
+  .product-grid{font-family: 'Times New Roman', Times, serif;position: relative;}
+  .product-grid .product-image{overflow: hidden;position: relative;}
+  .product-grid .product-image::before{
+    content: "";
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.4s ease-out 0s;
+  }
+  .product-grid:hover .product-image:before{opacity: 0.5;}
+  .product-grid .product-image a{display: block;}
+  .product-grid .product-image img{width: 100%;height: auto;}
+
+  .product-image .pic-1{
+    opacity: 1;
+    backface-visibility: hidden;
+    transition: all 04.s ease-out 0s;
+  }
+  .product-grid:hover .product-image .pic-1{opacity: 0;}
+
+  .product-image .pic-2{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    backface-visibility: hidden;
+    transform: scale(3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-out 0s;
+  }
+  .product-grid:hover .product-image .pic-2{opacity: 1;transform:scale(1)}
+  
+  .product-image .trending-products-label{
+    content: "";
+    color: white;
+    background-color: royalblue;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 7px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 3;
+  }
+  .product-grid .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    z-index: 4;
+  }
+  .product-grid .social li{
+    margin: 0 0 12px;
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: transform 0.3s ease-out 0.1s;
+  }
+  .product-grid:hover .social li{
+  opacity: 1;
+  transform: translateX(0);
+  }
+  
