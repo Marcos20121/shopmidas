@@ -10,13 +10,13 @@ footer {
 
 .topnav {
   overflow: hidden;
-  background-color: white;
+  background-color: black;
   
 }
 
 .topnav a {
   float: left;
-  color: black;
+  color: white;
   padding: 18px 88px;
   text-decoration: none;
   font-size: 20px;
@@ -106,4 +106,21 @@ footer {
   opacity: 1;
   transform: translateX(0);
   }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); }
   
+  .carousel {
+    border: solid black; }
+  
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100; }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
